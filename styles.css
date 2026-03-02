@@ -71,6 +71,12 @@ a:hover { color: #005999;text-decoration: underline; }
   color: #444;
 }
 
+img{
+   display:block;
+   max-width: 100%;
+   height: auto;
+   margin: 0 auto;
+}
 
 
 
