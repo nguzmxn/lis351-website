@@ -9,16 +9,16 @@ STEP 1: Add the required HTML5 skeleton
     <meta name="author" content="Nicholas Guzman">
     <meta name="description" content="A comparison of Mackinac Island and Galena, Illinois for a family trip in 2026.">
     <title>Guzman Family Trip 2026</title>
-    <link rel = "stylesheet" href="styles.css">
+    <link rel = "stylesheet" href="a4_stylesheet (1).css">
   </head>
 
   <body>
     <!-- =========================================================
     STEP 2: Build the “top area” (site name + navigation) using simple HTML
     ========================================================= -->
-    <header>
-      <h1 class="logo">Guzman Family Trip 2026</h1>
-      <nav>
+    <header class ="header-inner">
+      <h1 class="brand">Guzman Family Trip<span class = "dot"> 2026</span></h1>
+      <nav class = "site-nav">
         <ul>
           <li><a href="#mackinac">Mackinac Island</a></li>
           <li><a href="#galena">Galena Balloon Festival</a></li>
@@ -32,10 +32,12 @@ STEP 1: Add the required HTML5 skeleton
     ========================================================= -->
     <main> 
       <section class = "hero">
-        <h2> Mackinac Island vs. Galena Balloon Festival</h2>
-        <p>By: Nicholas Guzman</p>
-        <p> Because our family still can't come up with plans after a year of talking about this. I have made a simple comparison of Mackinac Island and Galena, Illinois.</p>
-        <a class = "button" href="#featured">Get Started</a>
+        <div class="hero-content">
+          <h2> Mackinac Island vs. Galena Balloon Festival</h2>
+          <p>By: Nicholas Guzman</p>
+          <p> Because our family still can't come up with plans after a year of talking about this. I have made a simple comparison of Mackinac Island and Galena, Illinois.</p>
+          <a class = "btn btn-dark" href="#featured">Get Started</a>
+        </div>
       </section>
 
     
@@ -44,99 +46,99 @@ STEP 1: Add the required HTML5 skeleton
     STEP 4: Features section (3 blocks) + featured content section
     ========================================================= -->
       <section class = "features">
-        <div class = "feature1">
-          <h3>Cost</h3>
-          <p>Mackinac Island is more expensive than Galena, Illinois.</p>
-        </div>
+        <div class = "features-grid">
+          <div class = "feature">
+            <h3>Cost</h3>
+            <p>Mackinac Island is more expensive than Galena, Illinois.</p>
+          </div>
 
-        <div class = "feature2">
-          <h3>Activities</h3>
-          <p>Mackinac Island activities consist of biking, horse carriage tours, hiking, and visiting Fort Mackinac. Whereas, Galena offers historical tours, vineyards, and ofcourse the hot air balloon fest.</p>
-       </div>
+          <div class = "feature">
+            <h3>Activities</h3>
+            <p>Mackinac Island activities consist of biking, horse carriage tours, hiking, and visiting Fort Mackinac. Whereas, Galena offers historical tours, vineyards, and ofcourse the hot air balloon fest.</p>
+          </div>
 
-        <div class = "feature">
-          <h3>Travel Time</h3>
-          <p>Mackinac Island is about a 6.5 hour drive plus a ferry ride, while Galena, Illinois is about a 2.5 hour drive.</p>
+          <div class = "feature">
+            <h3>Travel Time</h3>
+            <p>Mackinac Island is about a 6.5 hour drive plus a ferry ride, while Galena, Illinois is about a 2.5 hour drive.</p>
+          </div>
         </div>
       </section>
     <!-- Mackinac Island Section -->
       <section id = "featured" class = "featured-content">
-       <h2 id = "mackinac">Mackinac Island</h2>
-        <img src="images/mackinac.jpg" alt="Picture of Mackinac Island">
+        <div class="featured-item">
+          <h2 id = "mackinac">Mackinac Island</h2>
+          <img src="images/mackinac_island.jpeg" alt="Picture of Mackinac Island">
 
-        <h3>Location:</h3>
-        <p>Mackinac Island is located in Lake Huron, Michigan. This is about a 6.5 hour drive from the house. We would also have to take a ferry to get there.</p>
+          <h3>Location:</h3>
+          <p>Mackinac Island is located in Lake Huron, Michigan. This is about a 6.5 hour drive from the house. We would also have to take a ferry to get there.</p>
         
-        <h3>Cost of Mackinac Island</h3>
+          <h3>Cost of Mackinac Island</h3>
 
-        <ul>
-          <li>Ferry: $30–$35 per person</li>
-          <li>Hotel: Varies, can't give a definite answer without more specific information.</li>
-
-          <li>Food:
-            <ul>
-              <li>Budget-friendly options ($10–$15 per person)
-                <ul>
-                  <li>Pink Pony</li>
-                  <li>Yankee Rebel Tavern</li>
-                  <li>The Chuck Wagon of Mackinac</li>
-                </ul>
-              </li>
-
-              <li>Mid-range dining ($15–$25 per person)
-                <ul>
-                  <li>Millie's on Main</li>
-                  <li>Kingston Kitchen at the Village Inn</li>
-                  <li>Woods Restaurant</li>
-                </ul>
-              </li>
-
-              <li>Fine dining ($30–$50+ per person)
-                <ul>
-                  <li>1852 Grill Room</li>
-                  <li>Carriage House at Hotel Iroquois</li>
-                  <li>Chianti</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-      </ul>
-      <p>Keep in mind there are many mini shops as well, so we will probably spend a little extra getting snacks.</p>
-        <h3>Activities:</h3>
           <ul>
-            <li>Biking around the island
+            <li>Ferry: $30–$35 per person</li>
+            <li>Hotel: Varies, can't give a definite answer without more specific information.</li>
+          </ul>
+
+          <h3>Food</h3>
+            <li>Budget-friendly options ($10–$15 per person)
               <ul>
-                <li>Hourly Rates: $10-$15 per person</li>
-                <li> Half-Day Rentals: $30-$40 per person </li>
-                <li>Full-Day Tentals: $50-$100 per person</li>
+                <li>Pink Pony</li>
+                <li>Yankee Rebel Tavern</li>
+                <li>The Chuck Wagon of Mackinac</li>
               </ul>
-           </li>  
+            </li>
 
-            <li>Horse carriage tours($44 per person)</li>
-            <li>Fort Mackinac Tour($17.50 per person)</li>
-            <li>The Original Mackinac Island Butterfly House & Insect World ($15 per person)</li>
-            <li>Hiking and lake views(I think free)</li>
-            <li>Walking around the main street(idk how much we would end up spending on this)</li>
-          </ul>
+            <li>Mid-range dining ($15–$25 per person)
+              <ul>
+                <li>Millie's on Main</li>
+                <li>Kingston Kitchen at the Village Inn</li>
+                <li>Woods Restaurant</li>
+              </ul>
+            </li>
 
-        <h3>Pros:</h3>
-          <ul>
-            <li> No cars - unique</li>
-            <li> Beautiful Scenery</li>
-            <li> Lots of activities</li>
-            <li> First family trip</li>
-          </ul>
+            <li>Fine dining ($30–$50+ per person)
+              <ul>
+                <li>1852 Grill Room</li>
+                <li>Carriage House at Hotel Iroquois</li>
+                <li>Chianti</li>
+              </ul>
+            </li>
+          <h3>Activities:</h3>
+            <ul>
+              <li>Biking around the island
+                <ul>
+                  <li>Hourly Rates: $10-$15 per person</li>
+                  <li> Half-Day Rentals: $30-$40 per person </li>
+                  <li>Full-Day Tentals: $50-$100 per person</li>
+                </ul>
+              </li>  
 
-        <h3>Cons:</h3>
-          <ul>
-            <li>Will be very expensive</li>
-            <li>Long drive and ferry ride</li>
-            <li>Very busy in summer</li>
-          </ul>
+              <li>Horse carriage tours($44 per person)</li>
+              <li>Fort Mackinac Tour($17.50 per person)</li>
+              <li>The Original Mackinac Island Butterfly House & Insect World ($15 per person)</li>
+              <li>Hiking and lake views(I think free)</li>
+              <li>Walking around the main street(idk how much we would end up spending on this)</li>
+           </ul>
+
+          <h3>Pros:</h3>
+            <ul>
+              <li> No cars - unique</li>
+              <li> Beautiful Scenery</li>
+              <li> Lots of activities</li>
+              <li> First family trip</li>
+            </ul>
+
+          <h3>Cons:</h3>
+            <ul>
+              <li>Will be very expensive</li>
+              <li>Long drive and ferry ride</li>
+              <li>Very busy in summer</li>
+            </ul>
+        </div>
 
 <!-- Done with Mackinac Island -->
 <!-- Galena Section -->
-        <p>Now we will move on to Galena, Illinois</p>
+        <div class="featured-item">
         <h2 id = "galena">Galena Balloon Festival</h2>
         <img src="images/galena.jpg" alt="Picture of Galena, Illinois">
 
@@ -183,25 +185,37 @@ STEP 1: Add the required HTML5 skeleton
             <li>Not as many activities</li>
             <li>Not as scenic</li>
           </ul>
+        </div>
       </section>
     <!-- =========================================================
     STEP 5: Two secondary content blocks + CTA section 
     ========================================================= -->
       <section class = "secondary">
-        <div class = "block">
-          <h3>Why Choose Mackinac Island?</h3>
-          <p>Mackinac Island offers beautiful scenery, a unique no car policy, and plenty of activities</p>
-        </div>
-        <div class = "block">
-          <h3>Why Choose Galena?</h3>
-          <p>Galena is closer to home, less expensive, and has the unique experience of the balloon festival.</p>
+        <div class="secondary-grid">
+          <div class = "card">
+            <div class="card-text">
+              <h3>Why Choose Mackinac Island?</h3>
+              <p>Mackinac Island offers beautiful scenery, a unique no car policy, and plenty of activities</p>
+            </div>
+            <div class ="card-image" style ="background-image: url(images/mackinac.jpg);"></div>
+          </div>
+          <div class = "card">
+            <div class="card-text">
+              <h3>Why Choose Galena?</h3>
+              <p>Galena is closer to home, less expensive, and has the unique experience of the balloon festival.</p>
+            </div>
+            <div class="card-image" style="background-image: url(images/galena.jpg);"></div>
+          </div>
+
         </div>
       </section>
 
       <section class = "cta">
-        <h2 id = "conclusion">My Take</h2>
-        <p>Personally, as someone who hasn't traveled to an island, I can see the appeal with Mackinac, However, I know how expensive it can be, and as someone who isn't paying for the trip I would feel guilty if that is the reason why we end up going to Mackinac. I would also enjoy Galena's Balloon Festival and think it would be a great beginner trip with the family.</p>
-        <a class = "button" href="#featured">Make your choice</a>
+        <div class="cta-inner">
+          <h2 id = "conclusion">My Take</h2>
+          <p>Personally, as someone who hasn't traveled to an island, I can see the appeal with Mackinac, However, I know how expensive it can be, and as someone who isn't paying for the trip I would feel guilty if that is the reason why we end up going to Mackinac. I would also enjoy Galena's Balloon Festival and think it would be a great beginner trip with the family.</p>
+          <a class = "button" href="#featured">Make your choice</a>
+        </div>
       </section>
     </main>
     
@@ -209,8 +223,25 @@ STEP 1: Add the required HTML5 skeleton
     <!-- =========================================================
     STEP 6: Footer 
     ========================================================= -->
-    <footer>
-      <p>&copy; 2026 Nicholas Guzman - Created with love!</p>
+    <footer class="site-fiiter">
+      <div class = "footer-inner">
+        <div class = "footer-left">
+          <p>&copy; 2026 Nicholas Guzman - Created with love!</p>
+        </div>
+
+        <div class ="footer-cols">
+          <div class = "footer-col">
+            <h4>Explore</h4>
+            <a href = "#mackinac"> Mackinac Island</a>
+            <a href = "#galena"> Galena Festival</a>
+          </div>
+
+          <div class = "footer-col">
+            <h4>More</h4>
+            <a href ="#featured"> Featured </a>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
